@@ -30,8 +30,10 @@ class TipViewController: UIViewController {
         //deselect tipControl segments
         tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
         
-        //clear bill amount
+        //clear previous data
         billAmountTextField.text = ""
+        tipAmountLabel.text = "$0.00"
+        totalLabel.text = "$0.00"
         
         // Retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
